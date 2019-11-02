@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Car Show</title>
+	<link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+	<section>
+		<img src="./img/img1.jpg" id="background">
+		<div class="box">
+			<div class="img">
+				<img src="./img/img1b.jpg">
+			</div>
+			<h3>Lamborghini Aventador</h3>
+			<p>Color Mode</p>
+			<div class="color">
+				<span onclick="col(1)"></span>
+				<span onclick="col(2)"></span>
+				<span onclick="col(3)"></span>
+				<span onclick="col(4)"></span>
+				<span onclick="col(5)"></span>
+			</div>
+			<div class="price">
+				<h2>Price &nbsp&nbsp: &nbsp&nbsp<span style="font-size: 20px;">1,00,000$</span></h2>
+			</div>
+			<div class="contact">
+				<h4><b>Seating</b> capacity: 2<br><b>Fuel tank capacity</b>: 90 L<br><b>Dimensions</b>: 4,780 mm L x 2,030 mm W x 1,136 mm H<br><b>Curb weight</b>: 1,575 to 1,625 kg</h4>
+			</div>
+		</div>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+		var span = document.querySelectorAll("span");
+		function col(a){
+			$('#background').fadeOut(function(){
+				$(this).attr("src","./img/img"+a+".jpg").fadeIn();
+			})
+			/*$('.img img').fadeOut(250,function(){
+				$(this).attr("src","./img/img"+a+"b.jpg").fadeIn(250);
+			})*/
+			$('.img img').attr("src","./img/img"+a+"b.jpg");
+		}
+	</script>
+</body>
+</html>

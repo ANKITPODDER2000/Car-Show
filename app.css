@@ -1,0 +1,104 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+}
+section{
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+section img#background{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	filter: blur(7px);
+}
+section div.box{
+	position: relative;
+	width: 400px;
+	height: 500px;
+	background: #fff;
+	margin: 0 0 0 70px;
+	border-radius: 10px;
+	border: 20px solid #fff;
+	box-shadow: inset 0 0 30px rgba(0,0,0,0.1),
+					  0 20px 20px rgba(0,0,0,0.15);
+}
+section div.box .img{
+	position: relative;
+	width: 100%;
+	height: 30%;
+	display: block;
+}
+section div.box .img img{
+	width: 100%;
+	object-fit: contain;
+}
+section div.box h3,section div.box p{
+	text-align: center;
+	font-family: consolas;
+	text-decoration: underline;
+	margin-bottom: 20px;
+}
+section div.box p{
+	margin: 0;
+	font-family: serif;
+}
+section div.box .color{
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	height: 60px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+section div.box .color span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: black;
+	cursor: pointer;
+	border: 2px solid rgba(0,0,0,0.6);
+}
+section div.box .color span:nth-child(1){
+	background: #C2702D;
+}
+section div.box .color span:nth-child(2){
+	background: #866B04;
+}
+section div.box .color span:nth-child(3){
+	background: #0B908E;
+}
+section div.box .color span:nth-child(4){
+	background: #011659;
+}
+section div.box .color span:nth-child(5){
+	background: #5F0E0D;
+}
+
+section div.box .price{
+	display: block;
+	width: 80%;
+	margin: 10px auto;
+}
+section div.box .contact{
+	display: block;
+	width: 80%;
+	margin: 10px auto;
+}
+section div.box .contact h4{
+	line-height: 25px;
+	font-weight: normal;
+}
